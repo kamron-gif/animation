@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 300px;
+  width: 300px;
+  background-color: #f0f0f0;
+}
+.square {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: red;
+  animation: move 6s infinite;
+}
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+    background-color: red;
+  }
+  25% {
+    transform: translate(300px, 0);
+    background-color: blue;
+  }
+  50% {
+    transform: translate(300px, 300px);
+    background-color: green;
+  }
+  75% {
+    transform: translate(0, 300px);
+    background-color: yellow;
+  }
+  100% {
+    transform: translate(0, 0);
+    background-color: red;
+  }
+}
